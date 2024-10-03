@@ -68,7 +68,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.lblValorAbertura = new System.Windows.Forms.Label();
             this.lblSuprimento = new System.Windows.Forms.Label();
-            this.lblSangria = new System.Windows.Forms.Label();
+            this.lblGastos = new System.Windows.Forms.Label();
             this.lblEntradas = new System.Windows.Forms.Label();
             this.lblSaidas = new System.Windows.Forms.Label();
             this.lblTotalEntradas = new System.Windows.Forms.Label();
@@ -531,7 +531,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(52, 16);
             this.label19.TabIndex = 205;
-            this.label19.Text = "Sangria";
+            this.label19.Text = "Gastos";
             // 
             // label20
             // 
@@ -590,16 +590,16 @@
             this.lblSuprimento.Text = "0,00";
             this.lblSuprimento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblSangria
+            // lblGastos
             // 
-            this.lblSangria.BackColor = System.Drawing.SystemColors.Window;
-            this.lblSangria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSangria.Location = new System.Drawing.Point(12, 172);
-            this.lblSangria.Name = "lblSangria";
-            this.lblSangria.Size = new System.Drawing.Size(130, 23);
-            this.lblSangria.TabIndex = 227;
-            this.lblSangria.Text = "0,00";
-            this.lblSangria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblGastos.BackColor = System.Drawing.SystemColors.Window;
+            this.lblGastos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGastos.Location = new System.Drawing.Point(12, 172);
+            this.lblGastos.Name = "lblGastos";
+            this.lblGastos.Size = new System.Drawing.Size(130, 23);
+            this.lblGastos.TabIndex = 227;
+            this.lblGastos.Text = "0,00";
+            this.lblGastos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblEntradas
             // 
@@ -706,7 +706,7 @@
             this.Controls.Add(this.lblTotalEntradas);
             this.Controls.Add(this.lblSaidas);
             this.Controls.Add(this.lblEntradas);
-            this.Controls.Add(this.lblSangria);
+            this.Controls.Add(this.lblGastos);
             this.Controls.Add(this.lblSuprimento);
             this.Controls.Add(this.lblValorAbertura);
             this.Controls.Add(this.groupBox1);
@@ -777,7 +777,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lblValorAbertura;
         private System.Windows.Forms.Label lblSuprimento;
-        private System.Windows.Forms.Label lblSangria;
+        private System.Windows.Forms.Label lblGastos;
         private System.Windows.Forms.Label lblEntradas;
         private System.Windows.Forms.Label lblSaidas;
         private System.Windows.Forms.Label lblTotalEntradas;

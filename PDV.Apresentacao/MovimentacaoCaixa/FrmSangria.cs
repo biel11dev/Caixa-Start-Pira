@@ -7,23 +7,23 @@ using System.Windows.Forms;
 
 namespace PDV.Apresentacao.MovimentacaoCaixa
 {
-    public partial class FrmSangria : Form
+    public partial class FrmGastos : Form
     {
-        public FrmSangria()
+        public FrmGastos()
         {
             InitializeComponent();
         }
 
         #region Instâncias
 
-        SangriaNegocios sangriaNegocios = new SangriaNegocios();
+        GastosNegocios gastosNegocios = new GastosNegocios();
         CaixaNegocios caixaNegocios = new CaixaNegocios();
 
         #endregion
 
         #region Propriedades
 
-        public enumSangriaOuSuprimento tipoOperacao { get; set; }
+        public enumGastosOuSuprimento tipoOperacao { get; set; }
 
         #endregion
 
@@ -40,12 +40,12 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
         {
             try
             {
-                dtGrid = sangriaNegocios.CarregarGrid(DateTime.Now.AddYears(-1), DateTime.Now);
+                dtGrid = gastosNegocios.CarregarGrid(DateTime.Now.AddYears(-1), DateTime.Now);
                 grid.DataSource = dtGrid;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao tentar carregar as sangrias realizadas!\n\n" + ex.Message, "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao tentar carregar as gastoss realizadas!\n\n" + ex.Message, "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -65,7 +65,7 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
             {
                 MessageBox.Show("Caixa fechado!\n\nPor favor efetue a abertura do caixa!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtSaldoAtual.Enabled = false;
-                txtValorSangria.Enabled = false;
+                txtValorGastos.Enabled = false;
                 txtSaldoApos.Enabled = false;
                 txtObservacao.Enabled = false;
                 btnSalvar.Enabled = false;
@@ -75,18 +75,18 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
 
         #endregion
 
-        private void FrmSangria_Load(object sender, EventArgs e)
+        private void FrmGastos_Load(object sender, EventArgs e)
         {
             try
             {
                 PesquisarSaldoEmCaixa();
                 CarregarGrid();
 
-                txtValorSangria.Focus();
-                if (tipoOperacao == enumSangriaOuSuprimento.Sangria)
+                txtValorGastos.Focus();
+                if (tipoOperacao == enumGastosOuSuprimento.Gastos)
                 {
-                    lblValor.Text = "Valor da sangria"; 
-                    lblSaldoApos.Text = "Saldo após sangria";
+                    lblValor.Text = "Valor da gastos"; 
+                    lblSaldoApos.Text = "Saldo após gastos";
                     this.Text = "Retirar dinheiro do Caixa";
                 }
                 else
@@ -108,7 +108,7 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                 e.Handled = true;
         }
 
-        private void txtValorSangria_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtValorGastos_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsNumber(e.KeyChar) || e.KeyChar.ToString() == "\b" || e.KeyChar.ToString().Equals(","))
                 base.OnKeyPress(e);
@@ -126,27 +126,27 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (tipoOperacao == enumSangriaOuSuprimento.Sangria)
+            if (tipoOperacao == enumGastosOuSuprimento.Gastos)
             {
-                if (Convert.ToDecimal(txtSaldoAtual.Text) >= Convert.ToDecimal(txtValorSangria.Text))
+                if (Convert.ToDecimal(txtSaldoAtual.Text) >= Convert.ToDecimal(txtValorGastos.Text))
                 {
-                    if (MessageBox.Show("Confirma a sangria(retirada) em dinheiro do caixa no valor de R$ " + txtValorSangria.Text + ".", "Pergunta do Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Confirma a gastos(retirada) em dinheiro do caixa no valor de R$ " + txtValorGastos.Text + ".", "Pergunta do Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        Sangria sangria = new Sangria();
-                        sangria.CaixaId = Convert.ToInt32(drUltimaAbertura["CaixaId"]);
-                        sangria.UsuarioId = FrmLogin.usuarioId;
-                        sangria.ValorCaixa = Convert.ToDecimal(txtSaldoAtual.Text);
-                        sangria.ValorSangria = Convert.ToDecimal(txtValorSangria.Text);
-                        sangria.ValorAposSangria = Convert.ToDecimal(txtSaldoApos.Text);
-                        sangria.DataHora = DateTime.Now;
-                        sangria.Tipo = 1;//Sangria
+                        Gastos gastos = new Gastos();
+                        gastos.CaixaId = Convert.ToInt32(drUltimaAbertura["CaixaId"]);
+                        gastos.UsuarioId = FrmLogin.usuarioId;
+                        gastos.ValorCaixa = Convert.ToDecimal(txtSaldoAtual.Text);
+                        gastos.ValorGastos = Convert.ToDecimal(txtValorGastos.Text);
+                        gastos.ValorAposGastos = Convert.ToDecimal(txtSaldoApos.Text);
+                        gastos.DataHora = DateTime.Now;
+                        gastos.Tipo = 1;//Gastos
                         if (txtObservacao.Text.Trim().Length > 0)
-                            sangria.Observacao = "Sangria - " + txtObservacao.Text;
+                            gastos.Observacao = "Gastos - " + txtObservacao.Text;
                         else
-                            sangria.Observacao = "Sangria";
+                            gastos.Observacao = "Gastos";
 
 
-                        sangriaNegocios.Inserir(sangria);
+                        gastosNegocios.Inserir(gastos);
 
                         //Alterando o saldo do caixa
                         ObjetoTransferencia.Caixa caixa = new ObjetoTransferencia.Caixa();
@@ -157,43 +157,43 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                         MessageBox.Show("Operação realizada com sucesso!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         txtSaldoAtual.Clear();
-                        txtValorSangria.Clear();
+                        txtValorGastos.Clear();
                         txtSaldoApos.Clear();
 
                         PesquisarSaldoEmCaixa();
                         CarregarGrid();
 
-                        txtValorSangria.Select();
-                        txtValorSangria.Focus();
+                        txtValorGastos.Select();
+                        txtValorGastos.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Não é possível fazer uma sangria(retirada) maior do que o valor do caixa!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    txtValorSangria.SelectAll();
-                    txtValorSangria.Focus();
+                    MessageBox.Show("Não é possível fazer uma gastos(retirada) maior do que o valor do caixa!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txtValorGastos.SelectAll();
+                    txtValorGastos.Focus();
                 }
             }
             else
             {
-                if (txtValorSangria.Text != "0,00")
+                if (txtValorGastos.Text != "0,00")
                 {
-                    if (MessageBox.Show("Confirma o suprimento em dinheiro no caixa no valor de R$ " + txtValorSangria.Text + "!", "Pergunta do Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Confirma o suprimento em dinheiro no caixa no valor de R$ " + txtValorGastos.Text + "!", "Pergunta do Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        Sangria sangria = new Sangria();
-                        sangria.CaixaId = Convert.ToInt32(drUltimaAbertura["CaixaId"]);
-                        sangria.UsuarioId = FrmLogin.usuarioId;
-                        sangria.ValorCaixa = Convert.ToDecimal(txtSaldoAtual.Text);
-                        sangria.ValorSangria = Convert.ToDecimal(txtValorSangria.Text);
-                        sangria.ValorAposSangria = Convert.ToDecimal(txtSaldoApos.Text);
-                        sangria.DataHora = DateTime.Now;
-                        sangria.Tipo = 2; //Suprimento
+                        Gastos gastos = new Gastos();
+                        gastos.CaixaId = Convert.ToInt32(drUltimaAbertura["CaixaId"]);
+                        gastos.UsuarioId = FrmLogin.usuarioId;
+                        gastos.ValorCaixa = Convert.ToDecimal(txtSaldoAtual.Text);
+                        gastos.ValorGastos = Convert.ToDecimal(txtValorGastos.Text);
+                        gastos.ValorAposGastos = Convert.ToDecimal(txtSaldoApos.Text);
+                        gastos.DataHora = DateTime.Now;
+                        gastos.Tipo = 2; //Suprimento
                         if (txtObservacao.Text.Trim().Length > 0)
-                            sangria.Observacao = "Suprimento - " + txtObservacao.Text;
+                            gastos.Observacao = "Suprimento - " + txtObservacao.Text;
                         else
-                            sangria.Observacao = "Suprimento";
+                            gastos.Observacao = "Suprimento";
 
-                        sangriaNegocios.Inserir(sangria);
+                        gastosNegocios.Inserir(gastos);
 
                         //Alterando o saldo do caixa
                         ObjetoTransferencia.Caixa caixa = new ObjetoTransferencia.Caixa();
@@ -204,48 +204,48 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                         MessageBox.Show("Operação realizada com sucesso!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         txtSaldoAtual.Clear();
-                        txtValorSangria.Clear();
+                        txtValorGastos.Clear();
                         txtSaldoApos.Clear();
 
                         PesquisarSaldoEmCaixa();
                         CarregarGrid();
 
-                        txtValorSangria.Select();
-                        txtValorSangria.Focus();
+                        txtValorGastos.Select();
+                        txtValorGastos.Focus();
                     }
                 }
                 else
                 {
                     MessageBox.Show("Informe um valor para o suprimento(entrada) do caixa!", "Aviso do Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    txtValorSangria.Focus();
+                    txtValorGastos.Focus();
                 }
             }
         }
 
-        private void txtValorSangria_Leave(object sender, EventArgs e)
+        private void txtValorGastos_Leave(object sender, EventArgs e)
         {
             try
             {
-                if (tipoOperacao == enumSangriaOuSuprimento.Sangria)
+                if (tipoOperacao == enumGastosOuSuprimento.Gastos)
                 {
-                    if (txtValorSangria.Text != "0,00")
-                        txtSaldoApos.Text = (Convert.ToDecimal(txtSaldoAtual.Text) - Convert.ToDecimal(txtValorSangria.Text)).ToString("N2");
+                    if (txtValorGastos.Text != "0,00")
+                        txtSaldoApos.Text = (Convert.ToDecimal(txtSaldoAtual.Text) - Convert.ToDecimal(txtValorGastos.Text)).ToString("N2");
                     else
-                        txtValorSangria.Text = "0,00";
+                        txtValorGastos.Text = "0,00";
                 }
                 else
                 {
-                    if (txtValorSangria.Text != "0,00")
-                        txtSaldoApos.Text = (Convert.ToDecimal(txtSaldoAtual.Text) + Convert.ToDecimal(txtValorSangria.Text)).ToString("N2");
+                    if (txtValorGastos.Text != "0,00")
+                        txtSaldoApos.Text = (Convert.ToDecimal(txtSaldoAtual.Text) + Convert.ToDecimal(txtValorGastos.Text)).ToString("N2");
                     else
-                        txtValorSangria.Text = "0,00";
+                        txtValorGastos.Text = "0,00";
                 }
             }
             catch
             { }
         }
 
-        private void FrmSangria_KeyDown(object sender, KeyEventArgs e)
+        private void FrmGastos_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {

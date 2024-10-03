@@ -21,7 +21,7 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
         #region Instâncias
 
         CaixaNegocios caixaNegocios = new CaixaNegocios();
-        SangriaNegocios sangriaNegocios = new SangriaNegocios();
+        GastosNegocios gastosNegocios = new GastosNegocios();
 
         #endregion
 
@@ -44,22 +44,22 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                 lblFechamento.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             }
 
-            DataTable dtFluxo = sangriaNegocios.PesquisarMovimentosCaixa(Convert.ToDateTime(lblAbertura.Text), Convert.ToDateTime(lblFechamento.Text), ultimaAbertura);
+            DataTable dtFluxo = gastosNegocios.PesquisarMovimentosCaixa(Convert.ToDateTime(lblAbertura.Text), Convert.ToDateTime(lblFechamento.Text), ultimaAbertura);
 
             if (dtFluxo.Rows.Count > 0)
             {
-                decimal TotalEntrada = 0; decimal TotalSaida = 0; decimal Saldo = 0; decimal TotalSangria = 0; decimal TotalSuprimento = 0;
+                decimal TotalEntrada = 0; decimal TotalSaida = 0; decimal Saldo = 0; decimal TotalGastos = 0; decimal TotalSuprimento = 0;
 
                 //for (int i = 0; i < dtFluxo.Rows.Count; i++)
                 //{
                 //    if (dtFluxo.Rows[i]["Tipo"].Equals(1))
-                //        TotalEntrada += Convert.ToDecimal(dtFluxo.Rows[i]["ValorSangria"].ToString());
+                //        TotalEntrada += Convert.ToDecimal(dtFluxo.Rows[i]["ValorGastos"].ToString());
 
                 //    if (dtFluxo.Rows[i]["Tipo"].Equals(1))
-                //        TotalSaida += Convert.ToDecimal(dtFluxo.Rows[i]["ValorSangria"].ToString());
+                //        TotalSaida += Convert.ToDecimal(dtFluxo.Rows[i]["ValorGastos"].ToString());
 
-                //    if (dtFluxo.Rows[i]["MoviObse"].ToString().Contains("Sangria"))
-                //        TotalSangria += Convert.ToDecimal(dtFluxo.Rows[i]["MoviValo"].ToString());
+                //    if (dtFluxo.Rows[i]["MoviObse"].ToString().Contains("Gastos"))
+                //        TotalGastos += Convert.ToDecimal(dtFluxo.Rows[i]["MoviValo"].ToString());
 
                 //    if (dtFluxo.Rows[i]["MoviObse"].ToString().Contains("Suprimento"))
                 //        lblEntradas.Text += Convert.ToDecimal(dtFluxo.Rows[i]["MoviValo"].ToString());
@@ -68,9 +68,9 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                 //}
 
                 lblTotalEntradas.Text = (TotalEntrada - TotalSuprimento).ToString("N2");
-                lblTotalSaidas.Text = (TotalSaida - TotalSangria).ToString("N2");
+                lblTotalSaidas.Text = (TotalSaida - TotalGastos).ToString("N2");
                 lblSaldo.Text = Saldo.ToString("N2");
-                lblSangria.Text = TotalSangria.ToString("N2");
+                lblGastos.Text = TotalGastos.ToString("N2");
                 lblSuprimento.Text = TotalSuprimento.ToString("N2");
 
                 btnFecharCaixa.Enabled = true;

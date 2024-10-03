@@ -7,7 +7,7 @@ using System.Data;
 
 namespace PDV.Negocios
 {
-    public class SangriaNegocios
+    public class GastosNegocios
     {
         #region Instancias
 
@@ -17,27 +17,27 @@ namespace PDV.Negocios
 
         #region Variáveis Default
 
-        string nomeTabela = "Sangria";
+        string nomeTabela = "Gastos";
 
-        string sqlDefault = "SELECT SangriaId,CaixaId,S.UsuarioId,U.NomeLogin AS Usuario,ValorCaixa,ValorSangria,ValorAposSangria,DataHora,CASE WHEN Tipo='1' THEN 'Sangria' ELSE 'Suprimento' END AS Tipo,Observacao FROM Sangria S LEFT JOIN Usuarios U ON U.UsuarioId =S.UsuarioId ";
+        string sqlDefault = "SELECT GastosId,CaixaId,S.UsuarioId,U.NomeLogin AS Usuario,ValorCaixa,ValorGastos,ValorAposGastos,DataHora,CASE WHEN Tipo='1' THEN 'Gastos' ELSE 'Suprimento' END AS Tipo,Observacao FROM Gastos S LEFT JOIN Usuarios U ON U.UsuarioId =S.UsuarioId ";
 
         #endregion
 
         #region Métodos Publicos
 
-        public Boolean Inserir(Sangria sangria)
+        public Boolean Inserir(Gastos gastos)
         {
-            return conexao.Inserir(nomeTabela, PreencheParametros(sangria));
+            return conexao.Inserir(nomeTabela, PreencheParametros(gastos));
         }
 
-        public Boolean Alterar(Sangria sangria)
+        public Boolean Alterar(Gastos gastos)
         {
-            return conexao.Atualizar(nomeTabela, PreencheParametros(sangria), PreencheCondicoes(sangria));
+            return conexao.Atualizar(nomeTabela, PreencheParametros(gastos), PreencheCondicoes(gastos));
         }
 
-        public Boolean Excluir(Sangria sangria)
+        public Boolean Excluir(Gastos gastos)
         {
-            return conexao.Excluir(nomeTabela, PreencheCondicoes(sangria));
+            return conexao.Excluir(nomeTabela, PreencheCondicoes(gastos));
         }
 
         public DataTable PesquisarPorCodigo(int caixaId)
@@ -76,29 +76,29 @@ namespace PDV.Negocios
 
         #region Metodos Privados
 
-        private List<SqlParametros> PreencheParametros(Sangria sangria)
+        private List<SqlParametros> PreencheParametros(Gastos gastos)
         {
             List<SqlParametros> lstParametros = new List<SqlParametros>();
 
-            if (sangria.CaixaId > 0)
-                lstParametros.Add(new SqlParametros("CaixaId", sangria.CaixaId));
-            if (sangria.UsuarioId > 0)
-                lstParametros.Add(new SqlParametros("UsuarioId", sangria.UsuarioId));
-            lstParametros.Add(new SqlParametros("ValorCaixa", sangria.ValorCaixa.ToString().Replace(".", "").Replace(",", ".")));
-            lstParametros.Add(new SqlParametros("ValorSangria", sangria.ValorSangria.ToString().Replace(".", "").Replace(",", ".")));
-            lstParametros.Add(new SqlParametros("ValorAposSangria", sangria.ValorAposSangria.ToString().Replace(".", "").Replace(",", ".")));
-            lstParametros.Add(new SqlParametros("DataHora", sangria.DataHora.ToString("yyyy-MM-dd HH:mm:ss")));
-            lstParametros.Add(new SqlParametros("Tipo", sangria.Tipo));
-            lstParametros.Add(new SqlParametros("Observacao", sangria.Observacao));
+            if (gastos.CaixaId > 0)
+                lstParametros.Add(new SqlParametros("CaixaId", gastos.CaixaId));
+            if (gastos.UsuarioId > 0)
+                lstParametros.Add(new SqlParametros("UsuarioId", gastos.UsuarioId));
+            lstParametros.Add(new SqlParametros("ValorCaixa", gastos.ValorCaixa.ToString().Replace(".", "").Replace(",", ".")));
+            lstParametros.Add(new SqlParametros("ValorGastos", gastos.ValorGastos.ToString().Replace(".", "").Replace(",", ".")));
+            lstParametros.Add(new SqlParametros("ValorAposGastos", gastos.ValorAposGastos.ToString().Replace(".", "").Replace(",", ".")));
+            lstParametros.Add(new SqlParametros("DataHora", gastos.DataHora.ToString("yyyy-MM-dd HH:mm:ss")));
+            lstParametros.Add(new SqlParametros("Tipo", gastos.Tipo));
+            lstParametros.Add(new SqlParametros("Observacao", gastos.Observacao));
 
             return lstParametros;
         }
 
-        private List<SqlParametros> PreencheCondicoes(Sangria sangria)
+        private List<SqlParametros> PreencheCondicoes(Gastos gastos)
         {
             List<SqlParametros> lstParametrosCondicionais = new List<SqlParametros>();
 
-            lstParametrosCondicionais.Add(new SqlParametros("SangriaId", sangria.SangriaId));
+            lstParametrosCondicionais.Add(new SqlParametros("GastosId", gastos.GastosId));
 
             return lstParametrosCondicionais;
         }

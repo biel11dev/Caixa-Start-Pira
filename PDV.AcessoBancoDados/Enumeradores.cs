@@ -8,9 +8,9 @@
         Divorciado = 3
     }
 
-    public enum enumSangriaOuSuprimento
+    public enum enumGastosOuSuprimento
     {
-        Sangria = 1,
+        Gastos = 1,
         Suprimento = 2
     }
 

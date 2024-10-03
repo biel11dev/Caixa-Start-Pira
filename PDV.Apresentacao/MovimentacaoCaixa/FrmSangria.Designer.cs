@@ -1,6 +1,6 @@
 ﻿namespace PDV.Apresentacao.MovimentacaoCaixa
 {
-    partial class FrmSangria
+    partial class FrmGastos
     {
         /// <summary>
         /// Required designer variable.
@@ -38,20 +38,20 @@
             this.lblSaldoApos = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.grid = new System.Windows.Forms.DataGridView();
-            this.SangriaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GastosId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CaixaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UsuarioId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorCaixa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorSangria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorAposSangria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorGastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorAposGastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Observacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSaldoAtual = new PDV.Componentes.DecimalTextbox2Novo();
-            this.txtValorSangria = new PDV.Componentes.DecimalTextbox2Novo();
+            this.txtValorGastos = new PDV.Componentes.DecimalTextbox2Novo();
             this.txtSaldoApos = new PDV.Componentes.DecimalTextbox2Novo();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(102, 16);
             this.lblValor.TabIndex = 2;
-            this.lblValor.Text = "Valor da sangria";
+            this.lblValor.Text = "Valor da gastos";
             // 
             // lblSaldoApos
             // 
@@ -81,7 +81,7 @@
             this.lblSaldoApos.Name = "lblSaldoApos";
             this.lblSaldoApos.Size = new System.Drawing.Size(117, 16);
             this.lblSaldoApos.TabIndex = 4;
-            this.lblSaldoApos.Text = "Saldo após sangria";
+            this.lblSaldoApos.Text = "Saldo após gastos";
             // 
             // btnSalvar
             // 
@@ -109,13 +109,13 @@
             this.grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SangriaId,
+            this.GastosId,
             this.CaixaId,
             this.UsuarioId,
             this.Usuario,
             this.ValorCaixa,
-            this.ValorSangria,
-            this.ValorAposSangria,
+            this.ValorGastos,
+            this.ValorAposGastos,
             this.DataHora,
             this.Tipo,
             this.Observacao});
@@ -128,13 +128,13 @@
             this.grid.Size = new System.Drawing.Size(649, 155);
             this.grid.TabIndex = 198;
             // 
-            // SangriaId
+            // GastosId
             // 
-            this.SangriaId.DataPropertyName = "SangriaId";
-            this.SangriaId.HeaderText = "SangriaId";
-            this.SangriaId.Name = "SangriaId";
-            this.SangriaId.ReadOnly = true;
-            this.SangriaId.Visible = false;
+            this.GastosId.DataPropertyName = "GastosId";
+            this.GastosId.HeaderText = "GastosId";
+            this.GastosId.Name = "GastosId";
+            this.GastosId.ReadOnly = true;
+            this.GastosId.Visible = false;
             // 
             // CaixaId
             // 
@@ -169,25 +169,25 @@
             this.ValorCaixa.ReadOnly = true;
             this.ValorCaixa.Width = 120;
             // 
-            // ValorSangria
+            // ValorGastos
             // 
-            this.ValorSangria.DataPropertyName = "ValorSangria";
+            this.ValorGastos.DataPropertyName = "ValorGastos";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ValorSangria.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ValorSangria.HeaderText = "Sangria / Suprimento";
-            this.ValorSangria.Name = "ValorSangria";
-            this.ValorSangria.ReadOnly = true;
-            this.ValorSangria.Width = 160;
+            this.ValorGastos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ValorGastos.HeaderText = "Gastos / Suprimento";
+            this.ValorGastos.Name = "ValorGastos";
+            this.ValorGastos.ReadOnly = true;
+            this.ValorGastos.Width = 160;
             // 
-            // ValorAposSangria
+            // ValorAposGastos
             // 
-            this.ValorAposSangria.DataPropertyName = "ValorAposSangria";
+            this.ValorAposGastos.DataPropertyName = "ValorAposGastos";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ValorAposSangria.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ValorAposSangria.HeaderText = "Saldo atual";
-            this.ValorAposSangria.Name = "ValorAposSangria";
-            this.ValorAposSangria.ReadOnly = true;
-            this.ValorAposSangria.Width = 140;
+            this.ValorAposGastos.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ValorAposGastos.HeaderText = "Saldo atual";
+            this.ValorAposGastos.Name = "ValorAposGastos";
+            this.ValorAposGastos.ReadOnly = true;
+            this.ValorAposGastos.Width = 140;
             // 
             // DataHora
             // 
@@ -250,23 +250,23 @@
             0});
             this.txtSaldoAtual.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaldoAtual_KeyPress);
             // 
-            // txtValorSangria
+            // txtValorGastos
             // 
-            this.txtValorSangria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtValorSangria.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorSangria.Location = new System.Drawing.Point(12, 89);
-            this.txtValorSangria.Name = "txtValorSangria";
-            this.txtValorSangria.Size = new System.Drawing.Size(134, 33);
-            this.txtValorSangria.TabIndex = 0;
-            this.txtValorSangria.Text = "0,00";
-            this.txtValorSangria.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtValorSangria.ValorDecimal = new decimal(new int[] {
+            this.txtValorGastos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtValorGastos.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorGastos.Location = new System.Drawing.Point(12, 89);
+            this.txtValorGastos.Name = "txtValorGastos";
+            this.txtValorGastos.Size = new System.Drawing.Size(134, 33);
+            this.txtValorGastos.TabIndex = 0;
+            this.txtValorGastos.Text = "0,00";
+            this.txtValorGastos.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtValorGastos.ValorDecimal = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.txtValorSangria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorSangria_KeyPress);
-            this.txtValorSangria.Leave += new System.EventHandler(this.txtValorSangria_Leave);
+            this.txtValorGastos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorGastos_KeyPress);
+            this.txtValorGastos.Leave += new System.EventHandler(this.txtValorGastos_Leave);
             // 
             // txtSaldoApos
             // 
@@ -286,13 +286,13 @@
             0});
             this.txtSaldoApos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSaldoApos_KeyPress);
             // 
-            // FrmSangria
+            // FrmGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 267);
             this.Controls.Add(this.txtSaldoApos);
-            this.Controls.Add(this.txtValorSangria);
+            this.Controls.Add(this.txtValorGastos);
             this.Controls.Add(this.txtSaldoAtual);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtObservacao);
@@ -306,12 +306,12 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
-            this.Name = "FrmSangria";
+            this.Name = "FrmGastos";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retirando dinheiro do Caixa";
-            this.Load += new System.EventHandler(this.FrmSangria_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSangria_KeyDown);
+            this.Load += new System.EventHandler(this.FrmGastos_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmGastos_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -327,18 +327,18 @@
         private System.Windows.Forms.DataGridView grid;
         private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SangriaId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GastosId;
         private System.Windows.Forms.DataGridViewTextBoxColumn CaixaId;
         private System.Windows.Forms.DataGridViewTextBoxColumn UsuarioId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorCaixa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorSangria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorAposSangria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorGastos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorAposGastos;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataHora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Observacao;
         private Componentes.DecimalTextbox2Novo txtSaldoAtual;
-        private Componentes.DecimalTextbox2Novo txtValorSangria;
+        private Componentes.DecimalTextbox2Novo txtValorGastos;
         private Componentes.DecimalTextbox2Novo txtSaldoApos;
     }
 }

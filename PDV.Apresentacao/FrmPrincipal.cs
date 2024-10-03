@@ -421,13 +421,13 @@ namespace PDV.Apresentacao
             }
         }
 
-        private void menuSangria_Click(object sender, EventArgs e)
+        private void menuGastos_Click(object sender, EventArgs e)
         {
             bool found = false;
 
             foreach (Form form in Application.OpenForms)
             {
-                if (form is FrmSangria)
+                if (form is FrmGastos)
                 {
                     form.Focus();
                     found = true;
@@ -436,10 +436,10 @@ namespace PDV.Apresentacao
 
             if (!found)
             {
-                FrmSangria frmSangria = new FrmSangria();
-                frmSangria.MdiParent = this;
-                frmSangria.tipoOperacao = enumSangriaOuSuprimento.Sangria;
-                frmSangria.Show();
+                FrmGastos frmGastos = new FrmGastos();
+                frmGastos.MdiParent = this;
+                frmGastos.tipoOperacao = enumGastosOuSuprimento.Gastos;
+                frmGastos.Show();
             }
         }
 
@@ -449,7 +449,7 @@ namespace PDV.Apresentacao
 
             foreach (Form form in Application.OpenForms)
             {
-                if (form is FrmSangria)
+                if (form is FrmGastos)
                 {
                     form.Focus();
                     found = true;
@@ -458,10 +458,10 @@ namespace PDV.Apresentacao
 
             if (!found)
             {
-                FrmSangria frmSangria = new FrmSangria();
-                frmSangria.MdiParent = this;
-                frmSangria.tipoOperacao = enumSangriaOuSuprimento.Suprimento;
-                frmSangria.Show();
+                FrmGastos frmGastos = new FrmGastos();
+                frmGastos.MdiParent = this;
+                frmGastos.tipoOperacao = enumGastosOuSuprimento.Suprimento;
+                frmGastos.Show();
             }
         }
 

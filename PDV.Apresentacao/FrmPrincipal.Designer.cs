@@ -65,7 +65,7 @@
             this.barraCaixa = new System.Windows.Forms.ToolStrip();
             this.menuPDV = new System.Windows.Forms.ToolStripButton();
             this.menuAbrirCaixa = new System.Windows.Forms.ToolStripButton();
-            this.menuSangria = new System.Windows.Forms.ToolStripButton();
+            this.menuGastos = new System.Windows.Forms.ToolStripButton();
             this.menuSuprimento = new System.Windows.Forms.ToolStripButton();
             this.menuFecharCaixa = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
@@ -414,7 +414,7 @@
             this.barraCaixa.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuPDV,
             this.menuAbrirCaixa,
-            this.menuSangria,
+            this.menuGastos,
             this.menuSuprimento,
             this.menuFecharCaixa});
             this.barraCaixa.Location = new System.Drawing.Point(0, 25);
@@ -447,16 +447,16 @@
             this.menuAbrirCaixa.ToolTipText = "Cadastro de Clientes";
             this.menuAbrirCaixa.Click += new System.EventHandler(this.menuAbrirCaixa_Click);
             // 
-            // menuSangria
+            // menuGastos
             // 
-            this.menuSangria.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.menuSangria.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuSangria.Name = "menuSangria";
-            this.menuSangria.Size = new System.Drawing.Size(68, 62);
-            this.menuSangria.Text = "   Sangria   ";
-            this.menuSangria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuSangria.ToolTipText = "Cadastro de Clientes";
-            this.menuSangria.Click += new System.EventHandler(this.menuSangria_Click);
+            this.menuGastos.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.menuGastos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.menuGastos.Name = "menuGastos";
+            this.menuGastos.Size = new System.Drawing.Size(68, 62);
+            this.menuGastos.Text = "   Gastos   ";
+            this.menuGastos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuGastos.ToolTipText = "Cadastro de Clientes";
+            this.menuGastos.Click += new System.EventHandler(this.menuGastos_Click);
             // 
             // menuSuprimento
             // 
@@ -546,7 +546,7 @@
         private System.Windows.Forms.ToolStrip barraCaixa;
         private System.Windows.Forms.ToolStripButton menuPDV;
         private System.Windows.Forms.ToolStripButton menuAbrirCaixa;
-        private System.Windows.Forms.ToolStripButton menuSangria;
+        private System.Windows.Forms.ToolStripButton menuGastos;
         private System.Windows.Forms.ToolStripButton menuFecharCaixa;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripButton menuSuprimento;
