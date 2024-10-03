@@ -80,13 +80,13 @@
     <Compile Include="VendasNegocios.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj">
+    <ProjectReference Include="..\PDV.AcessoBancoDados\Start_Pira.AcessoBancoDados.csproj">
       <Project>{df26d0b2-3c55-47ae-9d8c-5800b1b96210}</Project>
-      <Name>PDV.AcessoBancoDados</Name>
+      <Name>Start_Pira.AcessoBancoDados</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PDV.ObjetoTransferencia\PDV.ObjetoTransferencia.csproj">
+    <ProjectReference Include="..\PDV.ObjetoTransferencia\Start_Pira.ObjetoTransferencia.csproj">
       <Project>{87158ea2-a9af-4ca4-ab05-07c4576f8a6b}</Project>
-      <Name>PDV.ObjetoTransferencia</Name>
+      <Name>Start_Pira.ObjetoTransferencia</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

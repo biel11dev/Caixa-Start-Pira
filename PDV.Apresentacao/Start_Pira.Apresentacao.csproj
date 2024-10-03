@@ -358,21 +358,21 @@
     <None Include="Resources\email %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj">
+    <ProjectReference Include="..\PDV.AcessoBancoDados\Start_Pira.AcessoBancoDados.csproj">
       <Project>{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}</Project>
-      <Name>PDV.AcessoBancoDados</Name>
+      <Name>Start_Pira.AcessoBancoDados</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PDV.Componentes\PDV.Componentes.csproj">
+    <ProjectReference Include="..\PDV.Componentes\Start_Pira.Componentes.csproj">
       <Project>{6ba1a094-6838-43bf-9329-62d43c65730a}</Project>
-      <Name>PDV.Componentes</Name>
+      <Name>Start_Pira.Componentes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PDV.Negocios\PDV.Negocios.csproj">
+    <ProjectReference Include="..\PDV.Negocios\Start_Pira.Negocios.csproj">
       <Project>{56D032C7-4419-4ED6-A52A-0151490B5570}</Project>
-      <Name>PDV.Negocios</Name>
+      <Name>Start_Pira.Negocios</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PDV.ObjetoTransferencia\PDV.ObjetoTransferencia.csproj">
+    <ProjectReference Include="..\PDV.ObjetoTransferencia\Start_Pira.ObjetoTransferencia.csproj">
       <Project>{87158EA2-A9AF-4CA4-AB05-07C4576F8A6B}</Project>
-      <Name>PDV.ObjetoTransferencia</Name>
+      <Name>Start_Pira.ObjetoTransferencia</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

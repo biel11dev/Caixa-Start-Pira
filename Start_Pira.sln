@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Apresentacao", "1. Apresentacao", "{CE3C4E0C-5374-4FCD-8788-9009F70E9DA1}"
 EndProject
@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Dados", "4. Dados", "{61
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Componentes", "5. Componentes", "{2E140BE1-0C24-4763-BAC2-BA1121FDBD45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Apresentacao", "PDV.Apresentacao\PDV.Apresentacao.csproj", "{CB889373-E456-4BED-B7AA-41FF2B4BDF51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Start_Pira.Apresentacao", "PDV.Apresentacao\Start_Pira.Apresentacao.csproj", "{CB889373-E456-4BED-B7AA-41FF2B4BDF51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.ObjetoTransferencia", "PDV.ObjetoTransferencia\PDV.ObjetoTransferencia.csproj", "{87158EA2-A9AF-4CA4-AB05-07C4576F8A6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Start_Pira.ObjetoTransferencia", "PDV.ObjetoTransferencia\Start_Pira.ObjetoTransferencia.csproj", "{87158EA2-A9AF-4CA4-AB05-07C4576F8A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Negocios", "PDV.Negocios\PDV.Negocios.csproj", "{56D032C7-4419-4ED6-A52A-0151490B5570}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Start_Pira.Negocios", "PDV.Negocios\Start_Pira.Negocios.csproj", "{56D032C7-4419-4ED6-A52A-0151490B5570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.AcessoBancoDados", "PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj", "{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Start_Pira.AcessoBancoDados", "PDV.AcessoBancoDados\Start_Pira.AcessoBancoDados.csproj", "{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDV.Componentes", "PDV.Componentes\PDV.Componentes.csproj", "{6BA1A094-6838-43BF-9329-62D43C65730A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Start_Pira.Componentes", "PDV.Componentes\Start_Pira.Componentes.csproj", "{6BA1A094-6838-43BF-9329-62D43C65730A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -79,9 +79,9 @@
     <Compile Include="VendasItens.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PDV.AcessoBancoDados\PDV.AcessoBancoDados.csproj">
+    <ProjectReference Include="..\PDV.AcessoBancoDados\Start_Pira.AcessoBancoDados.csproj">
       <Project>{df26d0b2-3c55-47ae-9d8c-5800b1b96210}</Project>
-      <Name>PDV.AcessoBancoDados</Name>
+      <Name>Start_Pira.AcessoBancoDados</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
