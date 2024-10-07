@@ -40,3 +40,5 @@
 /PDV.Negocios/bin/Debug/PDV.ObjetoTransferencia.pdb
 /PDV.Negocios/obj/Debug/PDV.Negocios.dll
 /PDV.Negocios/obj/Debug/PDV.Negocios.pdb
+*.dll
+*.pdb
