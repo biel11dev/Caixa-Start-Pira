@@ -15,7 +15,7 @@ namespace PDV.AcessoBancoDados
         {
             ConfiguracaoXML objReadXml = new ConfiguracaoXML();
             objReadXml.LerConfiguracaoBanco();
-            string strConn = string.Format("Server={0};Database={1};user={2};password={3};", objReadXml.Servidor, objReadXml.BancoDados, objReadXml.Usuario, objReadXml.Senha);
+            string strConn = string.Format("Server={0};Database={1};user={2};Trusted_Connection=True;", objReadXml.Servidor, objReadXml.BancoDados, objReadXml.Usuario);
             conn = new SqlConnection(strConn);
 
             cmdgeral = new SqlCommand();

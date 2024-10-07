@@ -1,10 +1,9 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Config>
-    <Servidor>DEVELOPER\SQL17</Servidor>
-    <BancoDados>PDV</BancoDados>
-    <Usuario>SA</Usuario>
-    <Senha>+WdwyYrhJ0I=</Senha>
-    <L>adnrg4aAl509YagIjgqOuA==</L>
+   <Servidor>localhost\SQLEXPRESS</Servidor>
+   <BancoDados>master</BancoDados>
+   <Usuario>DESKTOP-FI6LDDQ\Dell</Usuario>
+   <Senha>Startpira2024</Senha>
   </Config>
 </DocumentElement>
