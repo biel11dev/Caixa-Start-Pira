@@ -11,7 +11,7 @@ namespace PDV.AcessoBancoDados
 
         DataSet dtSet = new DataSet();
         DataTable dtTable = new DataTable();
-        string patch = AppDomain.CurrentDomain.BaseDirectory + @"\Config.xml";
+        string patch = AppDomain.CurrentDomain.BaseDirectory + @"Config.xml";
 
         #endregion
 
