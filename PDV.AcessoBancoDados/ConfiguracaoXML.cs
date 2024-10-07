@@ -11,9 +11,6 @@ namespace PDV.AcessoBancoDados
 
         DataSet dtSet = new DataSet();
         DataTable dtTable = new DataTable();
-        TripleDESCryptoServiceProvider DESCrypto = new TripleDESCryptoServiceProvider();
-        MD5CryptoServiceProvider MD5Crypto = new MD5CryptoServiceProvider();
-        string MyKey;
         string patch = AppDomain.CurrentDomain.BaseDirectory + @"\Config.xml";
 
         #endregion
@@ -34,28 +31,11 @@ namespace PDV.AcessoBancoDados
 
         public void LerConfiguracaoBanco()
         {
-            MyKey = "DFD@$/*9068fSiusdWSIKJKSAhgdf¨%&*&1231";
             dtSet.ReadXml(patch);
 
             if (dtSet.Tables[0].Rows.Count > 0)
             {
-                DESCrypto.Key = MD5Crypto.ComputeHash(ASCIIEncoding.ASCII.GetBytes(MyKey));
-                DESCrypto.Mode = CipherMode.ECB;
-
-                ICryptoTransform desdencrypt = DESCrypto.CreateDecryptor();
-                ICryptoTransform desencrypt = DESCrypto.CreateEncryptor();
-
-                ASCIIEncoding MyASCIIEncoding = new ASCIIEncoding();
-                Byte[] buff;
-
-                MyASCIIEncoding = new ASCIIEncoding();
-                buff = Convert.FromBase64String(dtSet.Tables[0].Rows[0]["Senha"].ToString());
-
-                if (buff.Length > 0)
-                    Senha = ASCIIEncoding.ASCII.GetString(desdencrypt.TransformFinalBlock(buff, 0, buff.Length));
-                else
-                    Senha = string.Empty;
-
+                Senha = dtSet.Tables[0].Rows[0]["Senha"].ToString();
                 Servidor = dtSet.Tables[0].Rows[0]["Servidor"].ToString();
                 BancoDados = dtSet.Tables[0].Rows[0]["BancoDados"].ToString();
                 Usuario = dtSet.Tables[0].Rows[0]["Usuario"].ToString();

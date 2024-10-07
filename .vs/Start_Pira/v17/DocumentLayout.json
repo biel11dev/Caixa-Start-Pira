@@ -1,7 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gabriel.ribeiro\\source\\repos\\biel11dev\\Caixa-Start-Pira\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}|PDV.AcessoBancoDados\\Start_Pira.AcessoBancoDados.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.acessobancodados\\configuracaoxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}|PDV.AcessoBancoDados\\Start_Pira.AcessoBancoDados.csproj|solutionrelative:pdv.acessobancodados\\configuracaoxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}|PDV.AcessoBancoDados\\Start_Pira.AcessoBancoDados.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.acessobancodados\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF26D0B2-3C55-47AE-9D8C-5800B1B96210}|PDV.AcessoBancoDados\\Start_Pira.AcessoBancoDados.csproj|solutionrelative:pdv.acessobancodados\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D032C7-4419-4ED6-A52A-0151490B5570}|PDV.Negocios\\Start_Pira.Negocios.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.negocios\\caixanegocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D032C7-4419-4ED6-A52A-0151490B5570}|PDV.Negocios\\Start_Pira.Negocios.csproj|solutionrelative:pdv.negocios\\caixanegocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56D032C7-4419-4ED6-A52A-0151490B5570}|PDV.Negocios\\Start_Pira.Negocios.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.negocios\\vendasnegocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56D032C7-4419-4ED6-A52A-0151490B5570}|PDV.Negocios\\Start_Pira.Negocios.csproj|solutionrelative:pdv.negocios\\vendasnegocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA1A094-6838-43BF-9329-62D43C65730A}|PDV.Componentes\\Start_Pira.Componentes.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.componentes\\scripts\\insert_formulariospermissoes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BA1A094-6838-43BF-9329-62D43C65730A}|PDV.Componentes\\Start_Pira.Componentes.csproj|solutionrelative:pdv.componentes\\scripts\\insert_formulariospermissoes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA1A094-6838-43BF-9329-62D43C65730A}|PDV.Componentes\\Start_Pira.Componentes.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.componentes\\scripts\\comandossql.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BA1A094-6838-43BF-9329-62D43C65730A}|PDV.Componentes\\Start_Pira.Componentes.csproj|solutionrelative:pdv.componentes\\scripts\\comandossql.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB889373-E456-4BED-B7AA-41FF2B4BDF51}|PDV.Apresentacao\\Start_Pira.Apresentacao.csproj|c:\\users\\dell\\source\\repos\\biel11dev\\caixa-start-pira\\pdv.apresentacao\\movimentacaocaixa\\operacoespdv\\frmpdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB889373-E456-4BED-B7AA-41FF2B4BDF51}|PDV.Apresentacao\\Start_Pira.Apresentacao.csproj|solutionrelative:pdv.apresentacao\\movimentacaocaixa\\operacoespdv\\frmpdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.AcessoBancoDados\\Conexao.cs",
+              "RelativeDocumentMoniker": "PDV.AcessoBancoDados\\Conexao.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.AcessoBancoDados\\Conexao.cs",
+              "RelativeToolTip": "PDV.AcessoBancoDados\\Conexao.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvw8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:16:07.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendasNegocios.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Negocios\\VendasNegocios.cs",
+              "RelativeDocumentMoniker": "PDV.Negocios\\VendasNegocios.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Negocios\\VendasNegocios.cs",
+              "RelativeToolTip": "PDV.Negocios\\VendasNegocios.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwIUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:12:12.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CaixaNegocios.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Negocios\\CaixaNegocios.cs",
+              "RelativeDocumentMoniker": "PDV.Negocios\\CaixaNegocios.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Negocios\\CaixaNegocios.cs",
+              "RelativeToolTip": "PDV.Negocios\\CaixaNegocios.cs",
+              "ViewState": "AgIAAAwAAADgzMzMzMwuwJEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:11:24.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "INSERT_FormulariosPermissoes.txt",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Componentes\\Scripts\\INSERT_FormulariosPermissoes.txt",
+              "RelativeDocumentMoniker": "PDV.Componentes\\Scripts\\INSERT_FormulariosPermissoes.txt",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Componentes\\Scripts\\INSERT_FormulariosPermissoes.txt",
+              "RelativeToolTip": "PDV.Componentes\\Scripts\\INSERT_FormulariosPermissoes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-07T00:11:16.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfiguracaoXML.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.AcessoBancoDados\\ConfiguracaoXML.cs",
+              "RelativeDocumentMoniker": "PDV.AcessoBancoDados\\ConfiguracaoXML.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.AcessoBancoDados\\ConfiguracaoXML.cs",
+              "RelativeToolTip": "PDV.AcessoBancoDados\\ConfiguracaoXML.cs",
+              "ViewState": "AgIAAAQAAAAAMzMzMzMLwBEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:01:15.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ComandosSQL.txt",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Componentes\\Scripts\\ComandosSQL.txt",
+              "RelativeDocumentMoniker": "PDV.Componentes\\Scripts\\ComandosSQL.txt",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Componentes\\Scripts\\ComandosSQL.txt",
+              "RelativeToolTip": "PDV.Componentes\\Scripts\\ComandosSQL.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-07T00:11:07.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPDV.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Apresentacao\\MovimentacaoCaixa\\OperacoesPDV\\FrmPDV.cs",
+              "RelativeDocumentMoniker": "PDV.Apresentacao\\MovimentacaoCaixa\\OperacoesPDV\\FrmPDV.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\biel11dev\\Caixa-Start-Pira\\PDV.Apresentacao\\MovimentacaoCaixa\\OperacoesPDV\\FrmPDV.cs",
+              "RelativeToolTip": "PDV.Apresentacao\\MovimentacaoCaixa\\OperacoesPDV\\FrmPDV.cs",
+              "ViewState": "AgIAAA8EAABgZmZmZmYrwBEEAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:10:46.646Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
