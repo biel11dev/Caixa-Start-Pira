@@ -43,3 +43,9 @@
 *.dll
 *.pdb
 /.vs/Start_Pira/v17/.suo
+*.db
+*.db-shm
+*.db-wal
+/.vs/Start_Pira/v17/DocumentLayout.json
+/.vs/Start_Pira/v17/DocumentLayout.backup.json
+/PDV.Apresentacao/obj/Debug/DesignTimeResolveAssemblyReferences.cache
