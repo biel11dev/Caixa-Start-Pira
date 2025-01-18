@@ -49,3 +49,10 @@
 /.vs/Start_Pira/v17/DocumentLayout.json
 /.vs/Start_Pira/v17/DocumentLayout.backup.json
 /PDV.Apresentacao/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/PDV.AcessoBancoDados/bin/Debug/PDV.AcessoBancoDados.dll
+/PDV.AcessoBancoDados/bin/Debug/PDV.AcessoBancoDados.pdb
+/PDV.AcessoBancoDados/obj/Debug/PDV.AcessoBancoDados.dll
+/PDV.AcessoBancoDados/obj/Debug/PDV.AcessoBancoDados.pdb
+/PDV.Negocios/obj/Debug/PDV.Negocios.pdb
+/.vs/Start_Pira/copilot-chat/2c810e76/sessions
+*.exe

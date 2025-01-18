@@ -17,7 +17,7 @@ namespace PDV.Negocios
 
         #region Variáveis Default
 
-        string nomeTabela = "fornecedor";
+        string nomeTabela = "Fornecedor";
 
         string sqlDefault = "SELECT F.FornecedorId,F.Nome,F.NomeFantasia,F.Ativo,F.TipoPessoa,F.CpfCnpj,F.RgIE,F.Telefone,F.Celular,F.Email,F.Contato,F.Cep,F.CidadeId,C.Nome +'-'+C.Uf AS Cidade,F.Endereco,F.Numero,F.Bairro,F.SiteFornecedor,F.Observacao,F.DataCadastro FROM Fornecedor F LEFT JOIN Cidades C ON C.CidadeId =F.CidadeId ";
 

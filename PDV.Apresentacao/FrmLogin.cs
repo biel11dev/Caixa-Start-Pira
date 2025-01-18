@@ -66,7 +66,7 @@ namespace PDV.Apresentacao
                         return false;
                     }
 
-                    if (dt.Rows[0]["Senha"].ToString().Equals(cryptografia.Crypto(txtSenha.Text, true)))
+                    if (dt.Rows[0]["Senha"].ToString().Equals(txtSenha.Text))
                     {
                         nome = dt.Rows[0]["Nome"].ToString();
                         nomeLogin = dt.Rows[0]["NomeLogin"].ToString();
