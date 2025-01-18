@@ -100,7 +100,7 @@ namespace PDV.Apresentacao.Cadastros
                 txtEmail.Text = rFornecedor["Email"].ToString();
                 txtSite.Text = rFornecedor["SiteFornecedor"].ToString();
                 txtObservacao.Text = rFornecedor["Observacao"].ToString();
-                dtpDataCadastro.Text = rFornecedor["DataCadastro"].ToString();
+                dtpDataCadastro.Value = Convert.ToDateTime(rFornecedor["DataCadastro"]); 
 
                 txtPesquisar.Clear();
                 tabControl.SelectedIndex = 0;

@@ -47,22 +47,22 @@ namespace PDV.Apresentacao.Cadastros
             {
                 erros = "Informe: Descrição do Produto.";
             }
-            if (string.IsNullOrEmpty(txtNCM.Text))
-            {
-                erros += "\nInforme: Classificação Fiscal (NCM).";
-            }
+            //if (string.IsNullOrEmpty(txtNCM.Text))
+            //{
+            //    erros += "\nInforme: Classificação Fiscal (NCM).";
+            //}
             if (string.IsNullOrEmpty(cbbUnidadeMedida.Text))
             {
                 erros += "\nInforme: Unidade de Medida.";
             }
-            if (string.IsNullOrEmpty(cbbGrupoProdutos.Text))
-            {
-                erros += "\nInforme: Grupo de Produto.";
-            }
-            if (txtDescricaoGrupoImposto.Text == "SELECIONE O GRUPO DE IMPOSTO")
-            {
-                erros += "\nInforme: Grupo de Imposto Fiscal.";
-            }
+            //if (string.IsNullOrEmpty(cbbGrupoProdutos.Text))
+            //{
+            //    erros += "\nInforme: Grupo de Produto.";
+            //}
+            //if (txtDescricaoGrupoImposto.Text == "SELECIONE O GRUPO DE IMPOSTO")
+            //{
+            //    erros += "\nInforme: Grupo de Imposto Fiscal.";
+            //}
             if (!string.IsNullOrEmpty(erros))
             {
                 MessageBox.Show("Os seguintes campos não foram informados!: \n\n" + erros, "Aviso do sistema!", MessageBoxButtons.OK, MessageBoxIcon.Information);

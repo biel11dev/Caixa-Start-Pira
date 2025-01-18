@@ -137,7 +137,7 @@ namespace PDV.Negocios
         {
             List<SqlParametros> lstParametros = new List<SqlParametros>();
 
-            lstParametros.Add(new SqlParametros("Abertura", caixa.Abertura.ToString("yyyy-MM-dd HH:mm:ss")));
+            lstParametros.Add(new SqlParametros("Abertura", caixa.Abertura));
             if (caixa.UsuarioId > 0)
                 lstParametros.Add(new SqlParametros("UsuarioId", caixa.UsuarioId));
             lstParametros.Add(new SqlParametros("Valor", caixa.Valor.ToString().Replace(".", "").Replace(",", ".")));
@@ -149,7 +149,7 @@ namespace PDV.Negocios
         {
             List<SqlParametros> lstParametros = new List<SqlParametros>();
 
-            lstParametros.Add(new SqlParametros("Fechamento", caixa.Fechamento.ToString("yyyy-MM-dd HH:mm:ss")));
+            lstParametros.Add(new SqlParametros("Fechamento", caixa.Fechamento));
 
             return lstParametros;
         }
