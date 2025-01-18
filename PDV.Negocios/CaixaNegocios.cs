@@ -33,7 +33,7 @@ namespace PDV.Negocios
 
         public Boolean Alterar(Caixa caixa)
         {
-            return conexao.Atualizar(nomeTabela, PreencheParametros(caixa), PreencheCondicoes(caixa));
+            return conexao.Atualizar(nomeTabela, PreencheParametrosFXD(caixa), PreencheCondicoes(caixa));
         }
 
         public Boolean AlterarFechamento(Caixa caixa)
@@ -119,7 +119,7 @@ namespace PDV.Negocios
                 caixa.CaixaId = Convert.ToInt32(dtCaixa.Rows[0]["CaixaId"].ToString());
                 caixa.UsuarioId = Convert.ToInt32(dtCaixa.Rows[0]["UsuarioId"]);
                 caixa.Abertura = Convert.ToDateTime(dtCaixa.Rows[0]["Abertura"].ToString());
-                caixa.Fechamento = Convert.ToDateTime(dtCaixa.Rows[0]["Fechamento "].ToString());
+                caixa.Fechamento = Convert.ToDateTime(dtCaixa?.Rows?[0]["Fechamento"].ToString());
                 caixa.Valor = Convert.ToDecimal(dtCaixa.Rows[0]["Valor"].ToString().Replace(".", "").Replace(",", "."));
 
                 return caixa;
@@ -128,6 +128,25 @@ namespace PDV.Negocios
                 return null;
         }
 
+        public Caixa PesquisarSaldoCaixaFXD(int caixaId)
+        {
+            DataTable dtCaixa = new DataTable();
+            dtCaixa = conexao.Pesquisar(string.Format("{0} WHERE CaixaId = {1} ", sqlDefault.Replace("#TROCA#", "WHERE"), caixaId));
+
+            if (dtCaixa.Rows.Count > 0 && dtCaixa != null)
+            {
+                Caixa caixa = new Caixa();
+
+                caixa.CaixaId = Convert.ToInt32(dtCaixa.Rows[0]["CaixaId"].ToString());
+                caixa.UsuarioId = Convert.ToInt32(dtCaixa.Rows[0]["UsuarioId"]);
+                caixa.Abertura = Convert.ToDateTime(dtCaixa.Rows[0]["Abertura"].ToString());
+                caixa.Valor = Convert.ToDecimal(dtCaixa.Rows[0]["Valor"].ToString().Replace(".", "").Replace(",", "."));
+
+                return caixa;
+            }
+            else
+                return null;
+        }
 
         #endregion 
 
@@ -141,6 +160,21 @@ namespace PDV.Negocios
             if (caixa.UsuarioId > 0)
                 lstParametros.Add(new SqlParametros("UsuarioId", caixa.UsuarioId));
             lstParametros.Add(new SqlParametros("Valor", caixa.Valor.ToString().Replace(".", "").Replace(",", ".")));
+
+
+            return lstParametros;
+        }
+
+        private List<SqlParametros> PreencheParametrosFXD(Caixa caixa)
+        {
+            List<SqlParametros> lstParametros = new List<SqlParametros>();
+
+            lstParametros.Add(new SqlParametros("Abertura", caixa.Abertura));
+            if (caixa.UsuarioId > 0)
+                lstParametros.Add(new SqlParametros("UsuarioId", caixa.UsuarioId));
+            lstParametros.Add(new SqlParametros("Valor", caixa.Valor.ToString().Replace(".", "").Replace(",", ".")));
+            lstParametros.Add(new SqlParametros("Fechamento", DateTime.UtcNow));
+
 
             return lstParametros;
         }

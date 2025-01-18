@@ -32,13 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPDV));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPDV));
             this.panelRodape = new System.Windows.Forms.Panel();
             this.btnFinalizarVenda = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -55,27 +55,6 @@
             this.txtTotalGeral = new PDV.Componentes.DecimalTextbox2Novo();
             this.label3 = new System.Windows.Forms.Label();
             this.grid = new System.Windows.Forms.DataGridView();
-            this.panelValores = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtQuantidade = new PDV.Componentes.Numero();
-            this.txtLancarValor = new PDV.Componentes.DecimalTextbox2Novo();
-            this.txtTotal = new PDV.Componentes.DecimalTextbox2Novo();
-            this.txtSubtotal = new PDV.Componentes.DecimalTextbox2Novo();
-            this.txtUnitario = new PDV.Componentes.DecimalTextbox2Novo();
-            this.lblLancarValor = new System.Windows.Forms.Label();
-            this.pbLogotipo = new System.Windows.Forms.PictureBox();
-            this.lblStatusCaixa = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelDescricaoProduto = new System.Windows.Forms.Panel();
-            this.lblDescricaoProduto = new System.Windows.Forms.Label();
-            this.panelTopo = new System.Windows.Forms.Panel();
-            this.lblTerminal = new System.Windows.Forms.Label();
-            this.lblOperador = new System.Windows.Forms.Label();
             this.numeroItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProdutosId_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,14 +83,35 @@
             this.IbptAliquotaEstadual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IbptAliquotaMunicipal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cfop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelValores = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtQuantidade = new PDV.Componentes.Numero();
+            this.txtLancarValor = new PDV.Componentes.DecimalTextbox2Novo();
+            this.txtTotal = new PDV.Componentes.DecimalTextbox2Novo();
+            this.txtSubtotal = new PDV.Componentes.DecimalTextbox2Novo();
+            this.txtUnitario = new PDV.Componentes.DecimalTextbox2Novo();
+            this.lblLancarValor = new System.Windows.Forms.Label();
+            this.lblStatusCaixa = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelDescricaoProduto = new System.Windows.Forms.Panel();
+            this.lblDescricaoProduto = new System.Windows.Forms.Label();
+            this.panelTopo = new System.Windows.Forms.Panel();
+            this.lblTerminal = new System.Windows.Forms.Label();
+            this.lblOperador = new System.Windows.Forms.Label();
+            this.pbLogotipo = new System.Windows.Forms.PictureBox();
             this.panelRodape.SuspendLayout();
             this.panelPrincipal.SuspendLayout();
             this.panelGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.panelValores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogotipo)).BeginInit();
             this.panelDescricaoProduto.SuspendLayout();
             this.panelTopo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogotipo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRodape
@@ -125,7 +125,7 @@
             this.panelRodape.Controls.Add(this.btnExcluirItem);
             this.panelRodape.Controls.Add(this.btnNovaVenda);
             this.panelRodape.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelRodape.Location = new System.Drawing.Point(0, 721);
+            this.panelRodape.Location = new System.Drawing.Point(0, 684);
             this.panelRodape.Name = "panelRodape";
             this.panelRodape.Size = new System.Drawing.Size(1173, 65);
             this.panelRodape.TabIndex = 40;
@@ -224,7 +224,7 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1173, 721);
+            this.panelPrincipal.Size = new System.Drawing.Size(1173, 684);
             this.panelPrincipal.TabIndex = 41;
             // 
             // panelGrid
@@ -398,281 +398,6 @@
             this.grid.TabIndex = 199;
             this.grid.TabStop = false;
             this.grid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellClick);
-            // 
-            // panelValores
-            // 
-            this.panelValores.Controls.Add(this.label5);
-            this.panelValores.Controls.Add(this.txtCodigo);
-            this.panelValores.Controls.Add(this.txtQuantidade);
-            this.panelValores.Controls.Add(this.txtLancarValor);
-            this.panelValores.Controls.Add(this.txtTotal);
-            this.panelValores.Controls.Add(this.txtSubtotal);
-            this.panelValores.Controls.Add(this.txtUnitario);
-            this.panelValores.Controls.Add(this.lblLancarValor);
-            this.panelValores.Controls.Add(this.pbLogotipo);
-            this.panelValores.Controls.Add(this.lblStatusCaixa);
-            this.panelValores.Controls.Add(this.label17);
-            this.panelValores.Controls.Add(this.label15);
-            this.panelValores.Controls.Add(this.label6);
-            this.panelValores.Controls.Add(this.label4);
-            this.panelValores.Controls.Add(this.label1);
-            this.panelValores.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelValores.Location = new System.Drawing.Point(660, 116);
-            this.panelValores.Name = "panelValores";
-            this.panelValores.Size = new System.Drawing.Size(513, 605);
-            this.panelValores.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(336, 297);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Qtd. Estoque";
-            this.label5.Visible = false;
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(3, 31);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(229, 46);
-            this.txtCodigo.TabIndex = 0;
-            this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigo_KeyDown);
-            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
-            // 
-            // txtQuantidade
-            // 
-            this.txtQuantidade.BackColor = System.Drawing.Color.White;
-            this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtQuantidade.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantidade.Location = new System.Drawing.Point(3, 127);
-            this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.ReadOnly = true;
-            this.txtQuantidade.Size = new System.Drawing.Size(229, 46);
-            this.txtQuantidade.TabIndex = 1;
-            this.txtQuantidade.Text = "1";
-            this.txtQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtQuantidade.ValorInteiro = 0;
-            this.txtQuantidade.Enter += new System.EventHandler(this.txtQuantidade_Enter);
-            this.txtQuantidade.Leave += new System.EventHandler(this.txtQuantidade_Leave);
-            // 
-            // txtLancarValor
-            // 
-            this.txtLancarValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLancarValor.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLancarValor.Location = new System.Drawing.Point(276, 415);
-            this.txtLancarValor.Name = "txtLancarValor";
-            this.txtLancarValor.Size = new System.Drawing.Size(229, 46);
-            this.txtLancarValor.TabIndex = 6;
-            this.txtLancarValor.Text = "0,00";
-            this.txtLancarValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtLancarValor.ValorDecimal = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.txtLancarValor.Visible = false;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.BackColor = System.Drawing.Color.White;
-            this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotal.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtTotal.Location = new System.Drawing.Point(3, 415);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(229, 46);
-            this.txtTotal.TabIndex = 4;
-            this.txtTotal.Text = "0,00";
-            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtTotal.ValorDecimal = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            // 
-            // txtSubtotal
-            // 
-            this.txtSubtotal.BackColor = System.Drawing.Color.White;
-            this.txtSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSubtotal.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubtotal.Location = new System.Drawing.Point(3, 319);
-            this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.ReadOnly = true;
-            this.txtSubtotal.Size = new System.Drawing.Size(229, 46);
-            this.txtSubtotal.TabIndex = 3;
-            this.txtSubtotal.Text = "0,00";
-            this.txtSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtSubtotal.ValorDecimal = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            // 
-            // txtUnitario
-            // 
-            this.txtUnitario.BackColor = System.Drawing.Color.White;
-            this.txtUnitario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUnitario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitario.Location = new System.Drawing.Point(3, 223);
-            this.txtUnitario.Name = "txtUnitario";
-            this.txtUnitario.ReadOnly = true;
-            this.txtUnitario.Size = new System.Drawing.Size(229, 46);
-            this.txtUnitario.TabIndex = 2;
-            this.txtUnitario.Text = "0,00";
-            this.txtUnitario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtUnitario.ValorDecimal = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            // 
-            // lblLancarValor
-            // 
-            this.lblLancarValor.AutoSize = true;
-            this.lblLancarValor.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLancarValor.Location = new System.Drawing.Point(272, 393);
-            this.lblLancarValor.Name = "lblLancarValor";
-            this.lblLancarValor.Size = new System.Drawing.Size(111, 19);
-            this.lblLancarValor.TabIndex = 12;
-            this.lblLancarValor.Text = "Lançar Valor";
-            this.lblLancarValor.Visible = false;
-            // 
-            // pbLogotipo
-            // 
-            this.pbLogotipo.BackColor = System.Drawing.Color.White;
-            this.pbLogotipo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogotipo.BackgroundImage")));
-            this.pbLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLogotipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbLogotipo.Location = new System.Drawing.Point(249, 9);
-            this.pbLogotipo.Name = "pbLogotipo";
-            this.pbLogotipo.Size = new System.Drawing.Size(256, 260);
-            this.pbLogotipo.TabIndex = 11;
-            this.pbLogotipo.TabStop = false;
-            // 
-            // lblStatusCaixa
-            // 
-            this.lblStatusCaixa.BackColor = System.Drawing.Color.Firebrick;
-            this.lblStatusCaixa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStatusCaixa.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusCaixa.ForeColor = System.Drawing.Color.White;
-            this.lblStatusCaixa.Location = new System.Drawing.Point(3, 470);
-            this.lblStatusCaixa.Name = "lblStatusCaixa";
-            this.lblStatusCaixa.Size = new System.Drawing.Size(502, 126);
-            this.lblStatusCaixa.TabIndex = 10;
-            this.lblStatusCaixa.Text = "Venda em andamento...";
-            this.lblStatusCaixa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(-1, 393);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 19);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "Valor Total";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(-1, 297);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(78, 19);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Subtotal";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(-1, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 19);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Valor Unitário";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-1, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Quantidade / Ctrl + Q";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-1, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código / Código de Barras";
-            // 
-            // panelDescricaoProduto
-            // 
-            this.panelDescricaoProduto.BackColor = System.Drawing.Color.Transparent;
-            this.panelDescricaoProduto.Controls.Add(this.lblDescricaoProduto);
-            this.panelDescricaoProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDescricaoProduto.Location = new System.Drawing.Point(0, 36);
-            this.panelDescricaoProduto.Name = "panelDescricaoProduto";
-            this.panelDescricaoProduto.Size = new System.Drawing.Size(1173, 80);
-            this.panelDescricaoProduto.TabIndex = 1;
-            // 
-            // lblDescricaoProduto
-            // 
-            this.lblDescricaoProduto.BackColor = System.Drawing.Color.Firebrick;
-            this.lblDescricaoProduto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescricaoProduto.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricaoProduto.ForeColor = System.Drawing.Color.White;
-            this.lblDescricaoProduto.Location = new System.Drawing.Point(0, 0);
-            this.lblDescricaoProduto.Name = "lblDescricaoProduto";
-            this.lblDescricaoProduto.Size = new System.Drawing.Size(1173, 80);
-            this.lblDescricaoProduto.TabIndex = 0;
-            this.lblDescricaoProduto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelTopo
-            // 
-            this.panelTopo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panelTopo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelTopo.Controls.Add(this.lblTerminal);
-            this.panelTopo.Controls.Add(this.lblOperador);
-            this.panelTopo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTopo.Location = new System.Drawing.Point(0, 0);
-            this.panelTopo.Name = "panelTopo";
-            this.panelTopo.Size = new System.Drawing.Size(1173, 36);
-            this.panelTopo.TabIndex = 0;
-            // 
-            // lblTerminal
-            // 
-            this.lblTerminal.AutoSize = true;
-            this.lblTerminal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTerminal.ForeColor = System.Drawing.Color.White;
-            this.lblTerminal.Location = new System.Drawing.Point(222, 6);
-            this.lblTerminal.Name = "lblTerminal";
-            this.lblTerminal.Size = new System.Drawing.Size(79, 18);
-            this.lblTerminal.TabIndex = 1;
-            this.lblTerminal.Text = "Terminal:";
-            // 
-            // lblOperador
-            // 
-            this.lblOperador.AutoSize = true;
-            this.lblOperador.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperador.ForeColor = System.Drawing.Color.White;
-            this.lblOperador.Location = new System.Drawing.Point(12, 6);
-            this.lblOperador.Name = "lblOperador";
-            this.lblOperador.Size = new System.Drawing.Size(84, 18);
-            this.lblOperador.TabIndex = 0;
-            this.lblOperador.Text = "Operador:";
             // 
             // numeroItem
             // 
@@ -886,12 +611,288 @@
             this.Cfop.ReadOnly = true;
             this.Cfop.Visible = false;
             // 
+            // panelValores
+            // 
+            this.panelValores.Controls.Add(this.label5);
+            this.panelValores.Controls.Add(this.txtCodigo);
+            this.panelValores.Controls.Add(this.txtQuantidade);
+            this.panelValores.Controls.Add(this.txtLancarValor);
+            this.panelValores.Controls.Add(this.txtTotal);
+            this.panelValores.Controls.Add(this.txtSubtotal);
+            this.panelValores.Controls.Add(this.txtUnitario);
+            this.panelValores.Controls.Add(this.lblLancarValor);
+            this.panelValores.Controls.Add(this.pbLogotipo);
+            this.panelValores.Controls.Add(this.lblStatusCaixa);
+            this.panelValores.Controls.Add(this.label17);
+            this.panelValores.Controls.Add(this.label15);
+            this.panelValores.Controls.Add(this.label6);
+            this.panelValores.Controls.Add(this.label4);
+            this.panelValores.Controls.Add(this.label1);
+            this.panelValores.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelValores.Location = new System.Drawing.Point(660, 116);
+            this.panelValores.Name = "panelValores";
+            this.panelValores.Size = new System.Drawing.Size(513, 568);
+            this.panelValores.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(336, 297);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 19);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Qtd. Estoque";
+            this.label5.Visible = false;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(3, 31);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(229, 46);
+            this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigo_KeyDown);
+            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.BackColor = System.Drawing.Color.White;
+            this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQuantidade.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantidade.Location = new System.Drawing.Point(3, 127);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.ReadOnly = true;
+            this.txtQuantidade.Size = new System.Drawing.Size(229, 46);
+            this.txtQuantidade.TabIndex = 1;
+            this.txtQuantidade.Text = "1";
+            this.txtQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQuantidade.ValorInteiro = 0;
+            this.txtQuantidade.Enter += new System.EventHandler(this.txtQuantidade_Enter);
+            this.txtQuantidade.Leave += new System.EventHandler(this.txtQuantidade_Leave);
+            // 
+            // txtLancarValor
+            // 
+            this.txtLancarValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLancarValor.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLancarValor.Location = new System.Drawing.Point(276, 415);
+            this.txtLancarValor.Name = "txtLancarValor";
+            this.txtLancarValor.Size = new System.Drawing.Size(229, 46);
+            this.txtLancarValor.TabIndex = 6;
+            this.txtLancarValor.Text = "0,00";
+            this.txtLancarValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLancarValor.ValorDecimal = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtLancarValor.Visible = false;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.Color.White;
+            this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotal.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTotal.Location = new System.Drawing.Point(3, 415);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(229, 46);
+            this.txtTotal.TabIndex = 4;
+            this.txtTotal.Text = "0,00";
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotal.ValorDecimal = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // txtSubtotal
+            // 
+            this.txtSubtotal.BackColor = System.Drawing.Color.White;
+            this.txtSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSubtotal.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubtotal.Location = new System.Drawing.Point(3, 319);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.ReadOnly = true;
+            this.txtSubtotal.Size = new System.Drawing.Size(229, 46);
+            this.txtSubtotal.TabIndex = 3;
+            this.txtSubtotal.Text = "0,00";
+            this.txtSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubtotal.ValorDecimal = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // txtUnitario
+            // 
+            this.txtUnitario.BackColor = System.Drawing.Color.White;
+            this.txtUnitario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUnitario.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitario.Location = new System.Drawing.Point(3, 223);
+            this.txtUnitario.Name = "txtUnitario";
+            this.txtUnitario.ReadOnly = true;
+            this.txtUnitario.Size = new System.Drawing.Size(229, 46);
+            this.txtUnitario.TabIndex = 2;
+            this.txtUnitario.Text = "0,00";
+            this.txtUnitario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUnitario.ValorDecimal = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            // 
+            // lblLancarValor
+            // 
+            this.lblLancarValor.AutoSize = true;
+            this.lblLancarValor.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLancarValor.Location = new System.Drawing.Point(272, 393);
+            this.lblLancarValor.Name = "lblLancarValor";
+            this.lblLancarValor.Size = new System.Drawing.Size(111, 19);
+            this.lblLancarValor.TabIndex = 12;
+            this.lblLancarValor.Text = "Lançar Valor";
+            this.lblLancarValor.Visible = false;
+            // 
+            // lblStatusCaixa
+            // 
+            this.lblStatusCaixa.BackColor = System.Drawing.Color.Firebrick;
+            this.lblStatusCaixa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStatusCaixa.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusCaixa.ForeColor = System.Drawing.Color.White;
+            this.lblStatusCaixa.Location = new System.Drawing.Point(3, 470);
+            this.lblStatusCaixa.Name = "lblStatusCaixa";
+            this.lblStatusCaixa.Size = new System.Drawing.Size(502, 126);
+            this.lblStatusCaixa.TabIndex = 10;
+            this.lblStatusCaixa.Text = "Venda em andamento...";
+            this.lblStatusCaixa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(-1, 393);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 19);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Valor Total";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(-1, 297);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(78, 19);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Subtotal";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(-1, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 19);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Valor Unitário";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(-1, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(187, 19);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Quantidade / Ctrl + Q";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(-1, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(223, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código / Código de Barras";
+            // 
+            // panelDescricaoProduto
+            // 
+            this.panelDescricaoProduto.BackColor = System.Drawing.Color.Transparent;
+            this.panelDescricaoProduto.Controls.Add(this.lblDescricaoProduto);
+            this.panelDescricaoProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDescricaoProduto.Location = new System.Drawing.Point(0, 36);
+            this.panelDescricaoProduto.Name = "panelDescricaoProduto";
+            this.panelDescricaoProduto.Size = new System.Drawing.Size(1173, 80);
+            this.panelDescricaoProduto.TabIndex = 1;
+            // 
+            // lblDescricaoProduto
+            // 
+            this.lblDescricaoProduto.BackColor = System.Drawing.Color.Firebrick;
+            this.lblDescricaoProduto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDescricaoProduto.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoProduto.ForeColor = System.Drawing.Color.White;
+            this.lblDescricaoProduto.Location = new System.Drawing.Point(0, 0);
+            this.lblDescricaoProduto.Name = "lblDescricaoProduto";
+            this.lblDescricaoProduto.Size = new System.Drawing.Size(1173, 80);
+            this.lblDescricaoProduto.TabIndex = 0;
+            this.lblDescricaoProduto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelTopo
+            // 
+            this.panelTopo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelTopo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelTopo.Controls.Add(this.lblTerminal);
+            this.panelTopo.Controls.Add(this.lblOperador);
+            this.panelTopo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopo.Location = new System.Drawing.Point(0, 0);
+            this.panelTopo.Name = "panelTopo";
+            this.panelTopo.Size = new System.Drawing.Size(1173, 36);
+            this.panelTopo.TabIndex = 0;
+            // 
+            // lblTerminal
+            // 
+            this.lblTerminal.AutoSize = true;
+            this.lblTerminal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTerminal.ForeColor = System.Drawing.Color.White;
+            this.lblTerminal.Location = new System.Drawing.Point(222, 6);
+            this.lblTerminal.Name = "lblTerminal";
+            this.lblTerminal.Size = new System.Drawing.Size(79, 18);
+            this.lblTerminal.TabIndex = 1;
+            this.lblTerminal.Text = "Terminal:";
+            // 
+            // lblOperador
+            // 
+            this.lblOperador.AutoSize = true;
+            this.lblOperador.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOperador.ForeColor = System.Drawing.Color.White;
+            this.lblOperador.Location = new System.Drawing.Point(12, 6);
+            this.lblOperador.Name = "lblOperador";
+            this.lblOperador.Size = new System.Drawing.Size(84, 18);
+            this.lblOperador.TabIndex = 0;
+            this.lblOperador.Text = "Operador:";
+            // 
+            // pbLogotipo
+            // 
+            this.pbLogotipo.BackColor = System.Drawing.Color.White;
+            this.pbLogotipo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogotipo.BackgroundImage")));
+            this.pbLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbLogotipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbLogotipo.Image = global::PDV.Apresentacao.Properties.Resources.Captura_de_tela_2025_01_18_052945;
+            this.pbLogotipo.Location = new System.Drawing.Point(262, 9);
+            this.pbLogotipo.Name = "pbLogotipo";
+            this.pbLogotipo.Size = new System.Drawing.Size(239, 238);
+            this.pbLogotipo.TabIndex = 11;
+            this.pbLogotipo.TabStop = false;
+            // 
             // FrmPDV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1173, 786);
+            this.ClientSize = new System.Drawing.Size(1173, 749);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panelRodape);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -910,10 +911,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.panelValores.ResumeLayout(false);
             this.panelValores.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogotipo)).EndInit();
             this.panelDescricaoProduto.ResumeLayout(false);
             this.panelTopo.ResumeLayout(false);
             this.panelTopo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogotipo)).EndInit();
             this.ResumeLayout(false);
 
         }

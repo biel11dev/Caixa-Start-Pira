@@ -73,6 +73,26 @@ namespace PDV.Apresentacao.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_01_18_052846 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-01-18 052846", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_01_18_052945 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-01-18 052945", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap confirma25 {
             get {
                 object obj = ResourceManager.GetObject("confirma25", resourceCulture);
@@ -196,6 +216,16 @@ namespace PDV.Apresentacao.Properties {
         internal static System.Drawing.Bitmap trash__1_ {
             get {
                 object obj = ResourceManager.GetObject("trash (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_01_18_at_05_24_05_2 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-01-18 at 05.24.05_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

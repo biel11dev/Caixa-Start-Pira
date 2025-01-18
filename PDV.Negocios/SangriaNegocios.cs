@@ -56,7 +56,7 @@ namespace PDV.Negocios
 
             if (caixaId > 0 && abertura != null)
             {
-                sql += ValidarString(sql) + string.Format("DataHora between '{0}' and '{1}'", abertura.Value.ToString("yyyy-MM-dd 00:00:00"), fechamento.Value.ToString("yyyy-MM-dd 23:59:59"));
+                sql += ValidarString(sql) + string.Format("DataHora BETWEEN CONVERT(DATETIME, '{0}', 121) AND CONVERT(DATETIME, '{1}', 121)", abertura.Value.ToString("yyyy-MM-dd 00:00:00.000"), fechamento.Value.ToString("yyyy-MM-dd 23:59:59.999")); 
             }
 
             sql += " ORDER BY DataHora";

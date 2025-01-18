@@ -759,14 +759,14 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                     txtCodigo.Text = frmPesquisarProdutos._ProdutosId.ToString();
                     txtCodigo_Leave(sender, e);
 
-                    //lblDescricaoProduto.Text = frmPesquisarProdutos._Descricao;
-                    //txtCodigo.Text = frmPesquisarProdutos._ProdutosId.ToString();
-                    //txtQuantidade.Text = "1";
-                    //txtUnitario.Text = Convert.ToDecimal(frmPesquisarProdutos._ValorUnitario).ToString("N2");
-                    //txtSubtotal.Text = (Convert.ToDecimal(txtQuantidade.Text) * Convert.ToDecimal(txtUnitario.Text)).ToString("N2");
+                    lblDescricaoProduto.Text = frmPesquisarProdutos._Descricao;
+                    txtCodigo.Text = frmPesquisarProdutos._ProdutosId.ToString();
+                    txtQuantidade.Text = "1";
+                    txtUnitario.Text = Convert.ToDecimal(frmPesquisarProdutos._ValorUnitario).ToString("N2");
+                    txtSubtotal.Text = (Convert.ToDecimal(txtQuantidade.Text) * Convert.ToDecimal(txtUnitario.Text)).ToString("N2");
 
-                    //txtCodigo.Select();
-                    //txtCodigo.Focus();
+                    txtCodigo.Select();
+                    txtCodigo.Focus();
                 }
             }
             else if (e.KeyCode == Keys.F6) //CLIENTES

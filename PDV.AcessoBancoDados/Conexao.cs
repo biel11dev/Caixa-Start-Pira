@@ -140,7 +140,8 @@ namespace PDV.AcessoBancoDados
 
             condicoes = condicoes.Substring(0, condicoes.Length - 4);
 
-            return Executar(string.Format("UPDATE {0} SET {1} WHERE ({2});", paramTabela, campos, condicoes));
+            var execute = Executar(string.Format("UPDATE {0} SET {1} WHERE ({2});", paramTabela, campos, condicoes));
+            return execute;
         }
 
         public bool Excluir(string tabela, List<SqlParametros> paramCondicoes)
