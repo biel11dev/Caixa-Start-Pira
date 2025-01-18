@@ -849,8 +849,8 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                         }
 
                         // Pesquisar os impostos do produto
-                        TributacaoFiscal tributacaoFiscal = new TributacaoFiscal();
-                        tributacaoFiscal = retornarImpostosProdutos.CalcularImpostos(FrmPrincipal.dadosEmpresa, produtosId, Convert.ToDecimal(txtTotalGeral.Text));
+                        //TributacaoFiscal tributacaoFiscal = new TributacaoFiscal();
+                        //tributacaoFiscal = retornarImpostosProdutos.CalcularImpostos(FrmPrincipal.dadosEmpresa, produtosId, Convert.ToDecimal(txtTotalGeral.Text));
 
                         txtTotalGeral.Text = Convert.ToDecimal(txtTotalGeral.Text).ToString("N2");
                         decimal novoValorUnitario = Convert.ToDecimal(txtUnitario.Text);
@@ -860,26 +860,26 @@ namespace PDV.Apresentacao.MovimentacaoCaixa
                                       dtProduto.Rows[0]["Descricao"].ToString(), // DESCRIÇÃO DO PRODUTO
                                       txtQuantidade.Text,                        // QUANTIDADE DE ITEM
                                       Convert.ToDecimal(dtProduto.Rows[0]["ValorUnitario"]).ToString("N2"), // VALOR UNITÁRIO
-                                      ((Convert.ToInt32(txtQuantidade.Text)) * Convert.ToDecimal(dtProduto.Rows[0]["ValorUnitario"])).ToString("N2"), // VALOR SUBTOTAL
-                                      tributacaoFiscal.PisCst,                   // PIS CST
-                                      tributacaoFiscal.PisPercentual,            // PERCENTUAL DO PIS
-                                      tributacaoFiscal.PisPercentualBC,          // BASE CALCULO PIS
-                                      tributacaoFiscal.PisValor,                 // VALOR DO PIS
-                                      tributacaoFiscal.CofinsCst,                // COFINS CST
-                                      tributacaoFiscal.CofinsPercentual,         // PERCENTUAL COFINS
-                                      tributacaoFiscal.CofinsPercentualBC,       // BASE CALCULO COFINS
-                                      tributacaoFiscal.CofinsValor,              // VALOR DO COFINS
-                                      tributacaoFiscal.IcmsPercentual,           // PERCENTUAL DO ICMS
-                                      tributacaoFiscal.IcmsPercentualBC,         // BASE CALCULO ICMS
-                                      tributacaoFiscal.IcmsValor,                // VALOR DO ICMS
-                                      tributacaoFiscal.IcmsCst,                  // CST OU CSOSN ICMS
-                                      0,                                         // BASE CALCULO IPI
-                                      0,                                         // VALOR IPI
-                                      0, 0, 0, 0,                                // VALORES ICMS ST
-                                      tributacaoFiscal.IbptAliquotaFederal,     
-                                      tributacaoFiscal.IbptAliquotaEstadual,
-                                      tributacaoFiscal.IbptAliquotaMunicipal,
-                                      tributacaoFiscal.Cfop
+                                      ((Convert.ToInt32(txtQuantidade.Text)) * Convert.ToDecimal(dtProduto.Rows[0]["ValorUnitario"])).ToString("N2") // VALOR SUBTOTAL
+                                      //tributacaoFiscal.PisCst,                   // PIS CST
+                                      //tributacaoFiscal.PisPercentual,            // PERCENTUAL DO PIS
+                                      //tributacaoFiscal.PisPercentualBC,          // BASE CALCULO PIS
+                                      //tributacaoFiscal.PisValor,                 // VALOR DO PIS
+                                      //tributacaoFiscal.CofinsCst,                // COFINS CST
+                                      //tributacaoFiscal.CofinsPercentual,         // PERCENTUAL COFINS
+                                      //tributacaoFiscal.CofinsPercentualBC,       // BASE CALCULO COFINS
+                                      //tributacaoFiscal.CofinsValor,              // VALOR DO COFINS
+                                      //tributacaoFiscal.IcmsPercentual,           // PERCENTUAL DO ICMS
+                                      //tributacaoFiscal.IcmsPercentualBC,         // BASE CALCULO ICMS
+                                      //tributacaoFiscal.IcmsValor,                // VALOR DO ICMS
+                                      //tributacaoFiscal.IcmsCst,                  // CST OU CSOSN ICMS
+                                      //0,                                         // BASE CALCULO IPI
+                                      //0,                                         // VALOR IPI
+                                      //0, 0, 0, 0,                                // VALORES ICMS ST
+                                      //tributacaoFiscal.IbptAliquotaFederal,     
+                                      //tributacaoFiscal.IbptAliquotaEstadual,
+                                      //tributacaoFiscal.IbptAliquotaMunicipal,
+                                      //tributacaoFiscal.Cfop
                         );
 
                         grid.FirstDisplayedScrollingRowIndex = grid.Rows.Count - 1;
